@@ -13,18 +13,19 @@
   border-radius: 5px;
 
   &__image {
-    width: 160px;
+    display: block;
+    width: 170px;
     height: 164px;
 
-    margin: 0 5px 30px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    margin: 0 auto 30px;
+    padding: 12px 2px;
 
-    transition: transform 1s;
+    transition: transform 1s, border-color 0s;
+    border: 3px solid transparent;
 
     &:hover {
       transform: scale(1.2);
-      outline: 3px solid #f3f3f3;
+      border-color: #f3f3f3;
     }
   }
 
