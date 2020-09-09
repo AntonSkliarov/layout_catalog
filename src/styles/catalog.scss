@@ -1,20 +1,9 @@
 .page__product-catalog {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  column-gap: 48px;
+  row-gap: 50px;
+  max-width: 944px;
   margin: 0 auto;
-}
-
-.product-catalog {
-  @media screen and (min-width: 1024px) {
-    width: 1024px;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-    padding-left: 128px;
-    padding-right: 128px;
-  }
+  justify-content: center;
 }
